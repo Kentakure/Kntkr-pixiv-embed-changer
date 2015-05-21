@@ -2,7 +2,7 @@
 /*
 Plugin Name: Kntkr pixiv embed changer
 Plugin URI: http://kentakure.net
-Description: 正規表現を用いてPixivの埋め込みをスマホ表示の場合に置換する。PC時：幅700px（枠付き）/スマホ時：幅220px（枠付き）
+Description: 正規表現を用いてPixivの埋め込みをスマホ表示の場合に置換する。PC時：幅390px（枠付き）/スマホ時：幅220px（枠付き）
 Version: 1.0
 Author: KENTAKURE
 Author URI: http://kentakure.net
@@ -24,11 +24,11 @@ function kntkr_pixiv_embed_changer($the_content) {
 	$patterns = array();
 	$patterns[0] = '/data-border="off"/';
 	$patterns[1] = '/data-size="small"/';
-	$patterns[2] = '/data-size="medium"/';
+	$patterns[2] = '/data-size="large"/';
 	$replacements = array();
 	$replacements[0] = 'data-border="on"';
-	$replacements[1] = 'data-size="large"';
-	$replacements[2] = 'data-size="large"';
+	$replacements[1] = 'data-size="medium"';
+	$replacements[2] = 'data-size="medium"';
 	$the_content = preg_replace($patterns, $replacements, $the_content);
   }
   return $the_content;
