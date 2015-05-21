@@ -10,7 +10,7 @@ License: KENTAKURE
 */
 /*編集ここから*/
 function kntkr_pixiv_embed_changer($the_content) {
-  if ( is_mobile()  && strstr($the_content, 'http://source.pixiv.net/source/embed.js') ) {
+  if ( wp_is_mobile()  && strstr($the_content, 'http://source.pixiv.net/source/embed.js') ) {
 	$patterns = array();
 	$patterns[0] = '/data-border="off"/';
 	$patterns[1] = '/data-size="large"/';
