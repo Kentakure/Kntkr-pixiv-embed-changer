@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Kntkr pixiv embed changer
-Plugin URI: http://kentakure.net
+Plugin URI: https://github.com/Kentakure/Kntkr-pixiv-embed-changer
 Description: 正規表現を用いてPixivの埋め込みをスマホ表示の場合に置換する。設定画面付き。
 Version: 2.0
 Author: KENTAKURE
